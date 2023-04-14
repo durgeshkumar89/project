@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.css">
+    <title>form | Login</title>
+    <style>
+        body{
+            background-image: url("b.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+        .container{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px 0 15px;
+        }
+        span{
+            color: white;
+            font-size: small;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        header{
+            color: white;
+            font-size: 40px;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        .input-field{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .input{
+            height: 45px;
+            width: 87%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: #fff;
+            padding: 0 0 0 45px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        ::-webkit-input-placeholder{
+            color: #fff;
+        }
+        .submit{
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            height: 45px;
+            outline: none;
+            width: 100%;
+            background: rgba(255,255,255,0.7);
+            cursor: pointer;
+            transition: .3s;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: small;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .left{
+            display: flex;
+        }
+        label a{
+             color: #fff;
+             text-decoration: none;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form id="form">
+        <div class="container">
+            <div class="top-header">
+                <span>Have an account</span>
+                <header>Login</header>
+            </div>
+            <div class="input-field">
+               <input id="username" type="text" class="input" placeholder="username" required/>
+               <i class="bx bx-user"></i>
+            </div>
+            <div class="input-field">
+                <input id="pass" type="password" class="input" placeholder="password" required/>
+                <i class="bx bx-lock-alt"></i>
+             </div>
+             <div class="input-field">
+                <input type="submit" class="submit" value="Login"/>
+             </div>
+             <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check"/>
+                    <label for="check">Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot password</a></label>
+                </div>
+             </div>
+        </div>
+    </form>
+    </div>
+
+    <script src="./js/js/form.js"></script>
+</body>
+</html>

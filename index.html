@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <style>
+        .topnav {
+             background-color: #333;
+             overflow: hidden;
+            }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+       .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+           }
+      .srch{
+            width: 300px;
+            margin-left: 600px;
+          }
+          .slider{
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url('a.jpg');
+            transform: translate(-50%, -50%);
+            background-size: 100%, 100%;
+            box-shadow: 1px 2px 10px 10px black;
+            animation: slider 9s infinite linear;
+          }
+          @keyframes slider {
+            0%{background-image:url('a.jpg');}
+            35%{background-image:url('b.jpg');}
+            75%{background-image:url('c.jpg');}
+          }
+          .btn{
+            box-shadow: 1px 2px 10px  black;
+            color: red;
+            margin-left: 25px;
+          }
+          .bg{
+           height: 600px;
+           background-color: white;
+          }
+
+          .cart{
+          width: 1200px;
+          min-height: 250px;
+          border-radius: 5px;
+          transform: translate(5%);
+
+          }
+          .title {
+            text-align: center;
+           
+          }
+          .des{
+            text-align: center;
+            padding: 20px;
+          }
+         .btn{
+          background-color: rgb(4, 44, 139);
+          color: aliceblue;
+         }
+         .cart-container{
+          margin-bottom: 30px;
+          border: 1px solid black;
+         }
+
+          .footer{
+          height: 300px;
+          width: 100%;
+          background-color: lightgrey;
+          padding: 100px 0;
+          }
+          .fontmenu h3{
+            font-size: 18px;
+          }
+          .fontmenu ul{
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+          .fontmenu ul li{
+            font-size: 18px;
+            line-height: 36px;
+            color: rgba(0,0,0,.6);
+          }
+          .fontmenu ul li:hover{
+            color: orange;
+          }
+          .fontmenu{
+            float: left;
+            width: 25%;
+          }
+          .img{
+            width: 550px;
+          }
+         
+          .box{
+            display: flex;
+            width: 100%;
+            height: 200px; 
+            margin-bottom: 20px;
+            background: lavender; 
+            box-shadow: 1px 2px 10px  black;
+        }
+        .box img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .content{
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+        .content h3{
+            margin-bottom: 30px;
+        }
+        .content h4{
+            margin-bottom: 50px;
+        }
+        .btn-area{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 25px;
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html" style="margin-left: 800px;background-color: tomato; border-radius: 10px;"> Login</a>
+
+
+      </div>
+     <div class="slider">
+        <h1><b style="color: aqua;">LIKE NATURE </b><br/><b style="color: whitesmoke;">BE CREATIVE!</b></h1>
+        <p style="color: blanchedalmond;">An introductory paragraph, as the opening of a conventional essay, composition, or report, <br/>
+          is designed to grab people's attention. It informs readers about<br/> the topic and why they should 
+          care about it but also adds enough intrigue to get them to continue to read.Lorem Ipsum is simply<br/>
+           dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <br/>
+           dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<br/>
+            it to make a type specimen book. It has survived not only five centuries, <br/>
+            but also the leap into electronic typesetting, remaining essentially unchanged.<br/>
+             It was popularised in the 1960s with the release of Letraset sheets containing <br/>
+             Lorem Ipsum passages, and more recently with desktop publishing software like<br/>
+              Aldus PageMaker including versions of Lorem Ipsum. </p>
+              <button class="btn">More Info</button>
+     </div>
+<div class="bg"></div>
+
+  <div class="cart">
+    <div class="box">
+      <img src="img.jpg" />
+      <div class="content">
+          <h3>Samsung</h3>
+          <h4>Price: 40000/-</h4>
+          <p class="unit">Quantity: <input value="0"></p>
+          <p class="btn-area">
+             
+              <span class="btn2">Add To Cart</span>
+          </p>
+          
+      </div>
+  </div>
+ 
+  </div>
+
+<div class="footer">
+<div class="container">
+  <div class="fontmenu">
+    <h3>Main Navigation</h3>
+    <ul>
+      <li>Homepage</li>
+      <li>Blog</li>
+      <li>Information</li>
+      <li>Social</li>
+    </ul>
+  </div>
+  <div class="fontmenu">
+    <h3>Brand</h3>
+    <ul>
+      <li>Mission</li>
+      <li>Our Portfolio</li>
+      <li>About Us</li>
+      <li>Get In Touch</li>
+    </ul>
+  </div>
+  <div class="fontmenu">
+    <h3>Usefull Links</h3>
+    <ul>
+      <li>Your Account</li>
+      <li>Portfolio</li>
+      <li>Our Support</li>
+      <li>Help</li>
+    </ul>
+  </div>
+  <div class="fontmenu">
+    <h3>Contact</h3>
+    <ul>
+      <li>info@Gmail.com</li>
+      <li>+01 5697318924</li>
+      <li>+91 7374549546</li>
+      <li>Lko Poly 220251</li>
+    </ul>
+  </div>
+</div>
+</div>
+</body>
+</html>
